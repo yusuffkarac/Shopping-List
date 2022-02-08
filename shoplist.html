@@ -24,7 +24,7 @@
         border-style: outset;
         left: 280px;
         top: 120px;
-        background-color: rgb(33, 172, 130);
+        background-color: rgb(135, 201, 171);
         font-family: "Times New Roman";
         font-size: 30px;
       }
@@ -35,8 +35,8 @@
         left: 230px;
         top: 150px;
         overflow: auto;
-        background-color: rgb(245, 233, 127);
-        border: 2px solid blue;
+        background-color: rgb(235, 235, 235);
+        border: 2px solid rgb(110, 110, 136);
         position: relative;
       }
 
@@ -48,23 +48,13 @@
         left: 900px;
         top: 220px;
         overflow: auto;
-        background-color: rgb(47, 173, 115);
-        border: 2px solid blue;
+        background-color: rgb(135, 201, 171);
+        border: 1px solid rgb(56, 56, 150);
         font-family: "Times New Roman";
         font-size: 26px;
       }
 
       #itemList {
-        /* position: relative;
-
-        width: min-content;
-        height: -5px;
-        border-style: outset;
-        left: 240px;
-        top: 120px;
-        background-color: rgb(231, 57, 57);
-        font-family: "Times New Roman";
-        font-size: 30px; */
         width: 500px;
         overflow: auto;
 
@@ -76,20 +66,15 @@
         font-size: 26px;
         position: relative;
 
-        background: rgb(37, 150, 37);
+        background: rgb(74, 88, 216);
       }
     </style>
   </head>
 
   <body>
     <input id="inpName" />
-    <input id="addButton" type="button" onclick="addItem()" value="EKLE" />
-    <!-- <input
-      id="deleteButton"
-      type="button"
-      onclick="console.log('asdasda')"
-      value="-"
-    /> -->
+    <input id="addButton" type="button" onclick="addItem()" value="ADD ITEM" />
+
     <div id="parent">
       <ul type="circle" id="itemList">
         <li>sample1</li>
@@ -97,15 +82,13 @@
 
         <li>sample3</li>
       </ul>
-      <!-- <div><ol id="buttonList"></ol></div>  -->
     </div>
 
     <div id="bought">
       <ul type="circle" id="boughtList">
-        ALINDI
+        BOUGHT
       </ul>
     </div>
-    <!-- <input type="file" name="dosya" id="dosya" /> -->
     <pre id="cikti"></pre>
     <script src="ShopList.js"></script>
   </body>

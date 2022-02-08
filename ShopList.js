@@ -1,4 +1,3 @@
-'use strict;'
 let addButton = document.getElementById("addButton");
 let inpName = document.getElementById("inpName");
 let itemList = document.getElementById("itemList");
@@ -6,7 +5,6 @@ var chillun = document.getElementById("itemList").childNodes;
 var counter = 0;
 
 var inList = new Array();
-
 
 function addItem() {
   if (inpName.value != "") {
@@ -40,7 +38,7 @@ function addItem() {
     const bought = document.createElement("button");
     bought.className = "bought";
     const textbt = document.createTextNode("Bought");
-    bought.onclick = () => bought(types);
+    bought.onclick = () => boughtItem(types);
     bought.appendChild(textbt);
     document.querySelector("#" + inpName.value).appendChild(bought);
     inpName.value = "";
@@ -57,7 +55,7 @@ function deleteItem(x) {
   listt.remove();
 }
 
-function bought(x) {
+function boughtItem(x) {
   addToBoughtList(x);
   var cc = x;
   let listt = document.getElementById(cc);
@@ -73,4 +71,3 @@ function addToBoughtList(x) {
   item.setAttribute("title", "text");
   document.querySelector("#boughtList").appendChild(item);
 }
-
